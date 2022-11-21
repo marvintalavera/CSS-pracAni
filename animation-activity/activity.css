@@ -3,6 +3,9 @@
   animation-name: top;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+  position: static;
+  top: auto;
+  left: auto;
 }
 
 .hamburger:hover > div:nth-child(2){
@@ -16,6 +19,9 @@
   animation-name: bottom;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+  position: static;
+  top: auto;
+  left: auto;
 }
 
 nav {
@@ -26,18 +32,97 @@ nav {
 .hamburger:hover ~ nav {
   opacity: 1;
 }
-
 @keyframes top {
-  from {}
-  to {}
+  0% {
+    transform: rotate(0deg);
+    position: static;
+    top: auto;
+    left: auto;
+  }
+  15% {
+    transform: rotate(2deg);
+    position: static;
+    top: 5%;
+    left: .5%;
+  }
+  25% {
+    transform: rotate(5deg);
+    position: static;
+    top: 10%;
+    left: 1%;
+  }
+  50% {
+    transform: rotate(15deg);
+    position: static;
+    top: 20%;
+    left: 2%;
+  }
+  75% {
+    transform: rotate(30deg);
+    position: static;
+    top: 25%;
+    left: 2.5%;
+  }
+  85% {
+    transform: rotate(38deg);
+    position: static;
+    top: 28%;
+    left: 2.8%;
+  }
+  100% {
+    transform: rotate(45deg);
+    position: relative;
+    top: 30%;
+    left: 3%;
+  }
 }
 
 @keyframes middle {
-  from {}
-  to {}
+  0% {opacity: 1;}
+  100% {opacity: 0;}
 }
 
 @keyframes bottom {
-  from {}
-  to {}
+  0% {
+    transform: rotate(0deg);
+    position: static;
+    bottom: auto;
+    left: auto;
+  }
+  15% {
+    transform: rotate(-2deg);
+    position: static;
+    bottom: 5%;
+    left: .5%;
+  }
+  25% {
+    transform: rotate(-5deg);
+    position: static;
+    bottom: 10%;
+    left: 1%;
+  }
+  50% {
+    transform: rotate(-15deg);
+    position: static;
+    bottom: 20%;
+    left: 2%;
+  }
+  75% {
+    transform: rotate(-30deg);
+    position: static;
+    bottom: 25%;
+    left: 2.5%;
+  }
+  85% {
+    transform: rotate(-38eg);
+    position: static;
+    bottom: 30%;
+    left: 2.8%;
+  }
+  100% {
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: 35%;
+    left: 3%;
+  }
 }

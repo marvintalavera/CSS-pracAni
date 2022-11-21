@@ -1,3 +1,11 @@
 main {
-
+    transform: rotate(-8deg);
+    font-style: italic;
+    height: 90vh;
+    width: 280vh;
+}
+main {
+    position: absolute;
+    left: -90px;
+    top: 50px;
 }
